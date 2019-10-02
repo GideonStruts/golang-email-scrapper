@@ -1,5 +1,4 @@
-// download_url.go
-package main
+package utils
 
 import (
 	"io"
@@ -8,10 +7,10 @@ import (
 	"os"
 )
 
-func main() {
+func downloadURL(url string) {
 
 	// Make request
-	response, err := http.Get("https://stackoverflow.com/questions/42407785/regex-extract-email-from-strings")
+	response, err := http.Get(url)
 	if err != nil {
 		log.Fatal(err)
 	}

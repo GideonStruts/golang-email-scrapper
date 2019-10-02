@@ -1,5 +1,5 @@
 // substring_matching.go
-package main
+package utils
 
 import (
 	"fmt"
@@ -10,7 +10,8 @@ import (
 	"strings"
 )
 
-func main() {
+func substring_matching() {
+
 	// Make HTTP GET request
 	response, err := http.Get("https://www.devdungeon.com/")
 	if err != nil {

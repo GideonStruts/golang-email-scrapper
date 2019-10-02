@@ -1,5 +1,5 @@
 // http_request_change_headers.go
-package main
+package utils
 
 import (
 	"io"
@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func main() {
+func http_request_change_headers() {
 	// Create HTTP client with timeout
 	client := &http.Client{
 		Timeout: 30 * time.Second,

@@ -1,5 +1,4 @@
-// find_html_emails_with_regex.go
-package main
+package utils
 
 import (
 	"fmt"
@@ -13,7 +12,7 @@ import (
 	"github.com/mcnijman/go-emailaddress"
 )
 
-func main() {
+func find_html_emails_with_regex() {
 
 	url := "https://stackoverflow.com/questions/42407785/regex-extract-email-from-strings"
 

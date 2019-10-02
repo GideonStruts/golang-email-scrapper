@@ -1,5 +1,5 @@
 // make_http_request_with_timeout.go
-package main
+package utils
 
 import (
 	"io"
@@ -9,7 +9,8 @@ import (
 	"time"
 )
 
-func main() {
+func make_http_request_with_timeout() {
+
 	// Create HTTP client with timeout
 	client := &http.Client{
 		Timeout: 30 * time.Second,

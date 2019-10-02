@@ -1,5 +1,4 @@
-// find_html_comments_with_regex.go
-package main
+package utils
 
 import (
 	"fmt"
@@ -9,7 +8,7 @@ import (
 	"regexp"
 )
 
-func main() {
+func find_html_comments_with_regex() {
 	// Make HTTP request
 	response, err := http.Get("https://www.devdungeon.com")
 	if err != nil {

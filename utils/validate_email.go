@@ -1,4 +1,4 @@
-package main
+package utils
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ func validateEmail(email string) bool {
 	return Re.MatchString(email)
 }
 
-func main() {
+func validateEmailAddress() {
 
 	email := "abc@abc12"
 

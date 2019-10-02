@@ -1,5 +1,4 @@
-// make_http_request.go
-package main
+package utils
 
 import (
 	"io"
@@ -8,7 +7,7 @@ import (
 	"os"
 )
 
-func main() {
+func httpTest() {
 	// Make HTTP GET request
 	response, err := http.Get("https://www.devdungeon.com/")
 	if err != nil {
