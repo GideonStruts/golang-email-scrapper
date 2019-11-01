@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	"golang-email-scrapper/utils"
 	"log"
 	"net/http"
 	"strings"
-	"web-scraping/utils"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -95,7 +95,7 @@ func GoogleScrape(searchTerm string, countryCode string, languageCode string) ([
 	}
 }
 
-func main() {
+func mainTwo() {
 
 	results, _ := GoogleScrape("Top companies in East Africa", "TZ", "EN")
 
